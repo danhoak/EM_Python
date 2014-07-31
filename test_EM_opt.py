@@ -13,10 +13,10 @@ from EM_GMM import *
 
 # Expectation-maximization works much better when there is a good initial guess for the cluster centroids.
 
-# But, this guess can come from a local maximum, in which case EM will get stuck and not 
+# But, this guess can come from a local maximum, in which case EM will get stuck and not explore the full parameter space
 
 # For now we sove these problems crudely, by calling k-means before E-M to get starting centroids, and repeating the process
-# several times and using the fit parameters that return the maximum likelihood.  This is a rough way to assure that we're finding
+# several times and choosing the MVN parameters that return the maximum likelihood.  This is a rough way to assure that we're finding
 # something close to the global maximum.
 
 
