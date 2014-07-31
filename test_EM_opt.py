@@ -3,11 +3,11 @@
 # This script implements the EM algorithm to fit a set of 2-dimensional Gaussian clusters
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from numpy import *
-from scipy.cluster.vq import *
 import matplotlib
 from matplotlib.font_manager import FontProperties
 matplotlib.use("Agg")
 import pylab
+from scipy.cluster.vq import *
 from MVNClusters import *
 from EM_GMM import *
 
